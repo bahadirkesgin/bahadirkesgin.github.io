@@ -113,8 +113,8 @@
         <p>A recurrent network needs memory: each step's output must depend on what came before.
         Can a fiber loop <em>physically circulate light back on itself</em> and let that recirculation
         <em>be</em> the memory, with no electronic feedback and no trained weights in the optical path?
-        Eslik &amp; Kesgin et al.,
-        <a href="https://arxiv.org/abs/2602.19246" target="_blank" rel="noopener">Optica, under review</a>.</p>
+        
+        <a href="https://arxiv.org/abs/2602.19246" target="_blank" rel="noopener">Eslik, Kesgin &amp; Te&#287;in, Optica, under review</a>.</p>
       </div>
       <div class="lab-widget">
         <div class="lab-widget-grid">

@@ -35,8 +35,8 @@
         <p class="lab-block-label">The question</p>
         <p>Two datapoints that start almost identically are fed as <em>initial conditions</em> into a chaotic
         electronic circuit computing the Lorenz attractor. Does the circuit's sensitivity to those initial
-        conditions, the textbook "butterfly effect," make the data easier to classify afterwards? Kesgin et al.,
-        <a href="https://doi.org/10.1038/s44172-024-00242-z" target="_blank" rel="noopener">Communications Engineering, 2024</a>.</p>
+        conditions, the textbook "butterfly effect," make the data easier to classify afterwards? 
+        <a href="https://doi.org/10.1038/s44172-024-00242-z" target="_blank" rel="noopener">Kesgin &amp; Te&#287;in, Communications Engineering, 2024</a>.</p>
       </div>
       <div class="lab-widget">
         <div class="lab-widget-grid">
@@ -63,7 +63,7 @@
         they pass through the attractor, exactly the kind of nonlinear, high-dimensional spreading a linear
         readout layer needs to draw a decision boundary. This is an <em>electronic</em>, not optical, chaotic
         processor: a two-op-amp, two-analog-multiplier circuit computing this exact ODE at 351&nbsp;mW.</p>
-        <p class="lab-caption"><a href="https://doi.org/10.1038/s44172-024-00242-z" target="_blank" rel="noopener">Commun. Eng. 3, 99 (2024)</a> &middot; code: <a href="https://doi.org/10.5281/zenodo.10051449" target="_blank" rel="noopener">Zenodo</a></p>
+        <p class="lab-caption"><a href="https://doi.org/10.1038/s44172-024-00242-z" target="_blank" rel="noopener">Kesgin &amp; Te&#287;in, Communications Engineering, 2024</a>.</p> &middot; code: <a href="https://doi.org/10.5281/zenodo.10051449" target="_blank" rel="noopener">Zenodo</a></p>
       </div>
     `;
     Lab.renderEquations(container);

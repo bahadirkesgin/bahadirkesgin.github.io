@@ -123,8 +123,8 @@
         <p class="lab-block-label">The question</p>
         <p>If a "bottle beam" (an optical vortex with a dark core) is launched into a multimode fiber, cranking up
         its peak power pushes the fiber from calm, orderly propagation into <em>spatiotemporal chaos</em>. Does that
-        chaos help or hurt when the light is doing a computation? Kesgin et al.,
-        <a href="https://doi.org/10.1515/nanoph-2024-0593" target="_blank" rel="noopener">Nanophotonics, 2025</a>.</p>
+        chaos help or hurt when the light is doing a computation? 
+        <a href="https://doi.org/10.1515/nanoph-2024-0593" target="_blank" rel="noopener">Kesgin &amp; Te&#287;in, Nanophotonics, 2025</a>.</p>
       </div>
       <div class="lab-widget">
         <div class="lab-widget-grid">

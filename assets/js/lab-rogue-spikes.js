@@ -85,8 +85,8 @@
         <p class="lab-block-label">The question</p>
         <p>Free-space diffraction of a phase-modulated beam naturally produces rare, very bright spots,
         optical <em>rogue waves</em>, formed by constructive interference. Can thresholding only those extreme
-        spots, and nothing else, act as a spiking neuron's firing rule? Kesgin et al.,
-        <a href="https://doi.org/10.1038/s44335-026-00080-6" target="_blank" rel="noopener">npj Unconventional Computing, 2026</a>.</p>
+        spots, and nothing else, act as a spiking neuron's firing rule?
+        <a href="https://doi.org/10.1038/s44335-026-00080-6" target="_blank" rel="noopener"> Kesgin et al., npj Unconventional Computing, 2026</a>.</p>
       </div>
       <div class="lab-widget">
         <div class="lab-widget-grid">

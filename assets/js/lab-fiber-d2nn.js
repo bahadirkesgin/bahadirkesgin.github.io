@@ -45,8 +45,8 @@
         <p class="lab-block-label">The question</p>
         <p>A graded-index multimode fiber scrambles light into a complex speckle pattern. Can purely
         <em>mechanical bending</em> of the fiber, with no lenses, chips, or digital layers, be tuned so that
-        the speckle pattern itself sorts breast-ultrasound images into malignant vs. benign? Kesgin et al.,
-        <a href="https://doi.org/10.1364/OL.570135" target="_blank" rel="noopener">Optics Letters, 2025</a>.</p>
+        the speckle pattern itself sorts breast-ultrasound images into malignant vs. benign? 
+        <a href="https://doi.org/10.1364/OL.570135" target="_blank" rel="noopener">Kesgin et al., Optics Letters, 2025</a>.</p>
       </div>
       <div class="lab-widget">
         <div class="lab-widget-grid">
