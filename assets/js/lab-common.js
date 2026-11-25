@@ -333,7 +333,8 @@
     const toggle = panel.querySelector('.lab-toggle');
     const body = panel.querySelector('.lab-body');
     const anchor = document.createComment('lab-body-anchor');
-    const titleEl = panel.closest('.hl-text') && panel.closest('.hl-text').querySelector('h3');
+    const host = panel.closest('.hl-text, .pub-body');
+    const titleEl = host && host.querySelector('h3, .pub-title');
     const titleText = titleEl ? titleEl.textContent : 'Interactive figure';
 
     const modal = el('div', 'lab-modal');
