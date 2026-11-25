@@ -108,9 +108,12 @@ img{max-width:100%;display:block}
 
 /* publications */
 .pubs{list-style:none;margin:0 0 14px;padding:0}
-.pub{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:20px 0;border-top:1px solid var(--line)}
+.pub{display:grid;grid-template-columns:auto 144px 1fr;gap:18px;align-items:start;padding:20px 0;border-top:1px solid var(--line)}
 .pub:first-child{border-top:0}
 .pub-n{font-family:var(--mono);font-size:.85rem;color:var(--muted);padding-top:3px}
+.pub-body{grid-column:3;min-width:0}
+.pub-thumb{width:144px;height:auto;aspect-ratio:4/3;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:8px}
+@media (max-width:600px){.pub{grid-template-columns:auto 1fr}.pub-thumb{grid-column:2;width:100%;max-width:280px}.pub-body{grid-column:2}}
 .pub-title{font-family:var(--disp);font-weight:500;font-size:1.08rem;line-height:1.32;margin:0 0 6px;color:var(--text)}
 .pub-meta{margin:0 0 6px;color:var(--text);font-size:.95rem}
 .pub-venue{font-size:.86rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
