@@ -341,6 +341,10 @@
       '<span>' + titleText + '</span>' +
       '<button class="lab-modal-close" type="button" aria-label="Close">&times;</button>' +
       '</div><div class="lab-modal-content"></div></div>';
+    const card = modal.querySelector('.lab-modal-card');
+    card.setAttribute('role', 'dialog');
+    card.setAttribute('aria-modal', 'true');
+    card.setAttribute('aria-label', titleText);
     const content = modal.querySelector('.lab-modal-content');
     const closeBtn = modal.querySelector('.lab-modal-close');
 
@@ -352,7 +356,7 @@
       body._labOpen = true;
       panel.classList.add('open');
       toggle.setAttribute('aria-expanded', 'true');
-      setTimeout(() => modal.classList.add('open'), 10);
+      setTimeout(() => { modal.classList.add('open'); closeBtn.focus(); }, 10);
       if (!done) { done = true; setTimeout(() => fn(body), 0); }
     }
     function closeModal() {
@@ -362,6 +366,7 @@
       panel.classList.remove('open');
       document.documentElement.classList.remove('lab-modal-lock');
       toggle.setAttribute('aria-expanded', 'false');
+      toggle.focus();
       setTimeout(() => {
         if (anchor.parentNode) anchor.parentNode.replaceChild(body, anchor);
         if (modal.parentNode) modal.parentNode.removeChild(modal);
