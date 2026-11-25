@@ -21,28 +21,16 @@ themeBtn?.addEventListener('click',()=>{
   syncPressed();
 });
 
-// ---- scroll reveal ----
-const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
-if(!reduce&&'IntersectionObserver'in window){
-  const io=new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
-  },{threshold:.12});
-  document.querySelectorAll('.band').forEach(b=>io.observe(b));
-}else{
-  document.querySelectorAll('.band').forEach(b=>b.classList.add('in'));
-}
-
 // ---- publication abstract / BibTeX toggles ----
-document.querySelectorAll('.badge-toggle').forEach(btn=>{
+document.querySelectorAll('.pub-links .link-btn').forEach(btn=>{
   btn.addEventListener('click',()=>{
-    const panel=document.getElementById(btn.getAttribute('aria-controls'));
     const open=btn.getAttribute('aria-expanded')!=='true';
-    btn.closest('.badges').querySelectorAll('.badge-toggle').forEach(b=>{
+    btn.closest('.pub-links').querySelectorAll('.link-btn').forEach(b=>{
       b.setAttribute('aria-expanded','false');
       document.getElementById(b.getAttribute('aria-controls')).hidden=true;
     });
     btn.setAttribute('aria-expanded',open);
-    panel.hidden=!open;
+    document.getElementById(btn.getAttribute('aria-controls')).hidden=!open;
   });
 });
 document.querySelectorAll('.bib-copy').forEach(btn=>{
@@ -58,19 +46,7 @@ document.querySelectorAll('.bib-copy').forEach(btn=>{
   });
 });
 
-// ---- publication topic filter ----
-const chips=document.querySelectorAll('.pub-filters .chip');
-chips.forEach(chip=>chip.addEventListener('click',()=>{
-  const f=chip.dataset.filter;
-  chips.forEach(c=>c.setAttribute('aria-pressed',c===chip));
-  document.querySelectorAll('#publications .pubs').forEach(list=>{
-    let shown=0;
-    list.querySelectorAll('.pub').forEach(p=>{
-      const hit=f==='all'||p.dataset.topics.split(' ').includes(f);
-      p.hidden=!hit;if(hit)shown++;
-    });
-    list.hidden=!shown;
-    const head=list.previousElementSibling;
-    if(head&&head.classList.contains('sub'))head.hidden=!shown;
-  });
-}));
+// ---- figure thumbnails open the paper's interactive figure ----
+document.querySelectorAll('.thumb-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>btn.closest('.pub').querySelector('.lab-toggle').click());
+});
